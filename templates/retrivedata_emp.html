@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>This is Employee Table</h1>
+        <table border="2px">
+            <tr>
+                <th>E id</th>
+                <th>E Name</th>
+                <th>Job</th>
+                <th>Sal</th>
+                <th>Did</th>
+            </tr>
+            {% for eo in edata %}
+                <tr>
+                    <td>{{eo.eid}}</td>
+                    <td>{{eo.ename}}</td>
+                    <td>{{eo.job}}</td>
+                    <td>{{eo.sal}}</td>
+                    <td>{{eo.did.did}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
